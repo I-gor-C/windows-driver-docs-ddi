@@ -1,0 +1,122 @@
+---
+UID: NS.d3dkmddi._DXGK_UPDATEPAGETABLEFLAGS
+title: DXGK_UPDATEPAGETABLEFLAGS
+author: windows-driver-content
+description: DXGK_UPDATEPAGETABLEFLAGS is used as part of a page table update operation.
+old-location: display\dxgk_updatepagetableflags.htm
+ms.assetid: E0E1CDE7-F1BF-44C8-A320-9BD90788679F
+ms.author: windowsdriverdev
+ms.date: 10/25/2017
+ms.topic: struct
+ms.prod: windows-hardware
+ms.technology: display
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: DXGK_UPDATEPAGETABLEFLAGS
+req.alt-loc: d3dkmddi.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+ms.keywords: DXGK_UPDATEPAGETABLEFLAGS, DXGK_UPDATEPAGETABLEFLAGS
+req.iface: 
+---
+
+# DXGK_UPDATEPAGETABLEFLAGS structure
+
+
+
+## -description
+<p><b>DXGK_UPDATEPAGETABLEFLAGS</b> is used as part of a page table update operation.</p>
+
+
+## -syntax
+
+````
+typedef struct _DXGK_UPDATEPAGETABLEFLAGS {
+  UINT Repeat  :1;
+  UINT InitialUpdate  :1;
+  UINT NotifyEviction  :1;
+  UINT Use64KBPages  :1;
+  UINT Reserved  :28;
+} DXGK_UPDATEPAGETABLEFLAGS;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field <b>Repeat</b>
+
+<dd>
+<p>When set to <b>TRUE</b>, page table entries will point to a single page table entry value that needs to be replicated to all page table entries being updated.</p>
+</dd>
+
+### -field <b>InitialUpdate</b>
+
+<dd>
+<p>Indicates that the page table is initialized very first time after being made resident in memory.</p>
+</dd>
+
+### -field <b>NotifyEviction</b>
+
+<dd>
+<p>Indicates that the page table is about to be evicted. </p>
+</dd>
+
+### -field <b>Use64KBPages</b>
+
+<dd>
+<p>Indicates that page table entries  point to page tables pointing to 64 KB pages. </p>
+</dd>
+
+### -field <b>Reserved</b>
+
+<dd>
+<p>This member is reserved and should be set to zero.</p>
+</dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Minimum supported client</p>
+</th>
+<td width="70%">
+<p>Windows 10</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Minimum supported server</p>
+</th>
+<td width="70%">
+<p>Windows Server 2016</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
+</dl>
+</td>
+</tr>
+</table>

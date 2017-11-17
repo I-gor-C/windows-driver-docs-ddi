@@ -1,0 +1,137 @@
+---
+UID: NF.ks.KsStreamPointerLock
+title: KsStreamPointerLock
+author: windows-driver-content
+description: The KsStreamPointerLock function attempts to lock the specified stream pointer.
+old-location: stream\ksstreampointerlock.htm
+ms.assetid: eb960301-2afa-42f7-a2ea-129d85c49db9
+ms.author: windowsdriverdev
+ms.date: 10/25/2017
+ms.topic: function
+ms.prod: windows-hardware
+ms.technology: stream
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: KsStreamPointerLock
+req.alt-loc: Ks.lib,Ks.dll
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: <=DISPATCH_LEVEL
+ms.keywords: KsStreamPointerLock
+req.iface: 
+---
+
+# KsStreamPointerLock function
+
+
+
+## -description
+<p>The<b> KsStreamPointerLock </b>function attempts to lock the specified stream pointer.</p>
+
+
+## -syntax
+
+````
+NTSTATUS KsStreamPointerLock(
+  _In_ PKSSTREAM_POINTER StreamPointer
+);
+````
+
+
+## -parameters
+<dl>
+
+### -param <i>StreamPointer</i> [in]
+
+<dd>
+<p>A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure representing the stream pointer to attempt to lock.</p>
+</dd>
+</dl>
+
+## -returns
+<p><b>KsStreamPointerLock </b>returns either STATUS_SUCCESS, indicating that the stream pointer has been locked, or an appropriate error code. STATUS_DEVICE_NOT_READY is the usual error code indicating that the frame could not be locked. This error code frequently means that the frame to which <i>StreamPointer</i> was pointing was canceled.</p>
+
+## -remarks
+<p>A locked stream pointer guarantees that there is a data frame associated with the stream pointer and that this frame is not canceled as long as the lock is maintained. The minidriver should lock a stream pointer before attempting to access the data to which the stream pointer points.</p>
+
+<p>If the pin that the stream pointer references specifies that DMA scatter/gather mappings should be generated using KSPIN_FLAG_GENERATE_MAPPINGS, AVStream generates the mappings when the stream pointer is locked.</p>
+
+<p>Also see <a href="NULL">Stream Pointers</a>. </p>
+
+<p>A locked stream pointer guarantees that there is a data frame associated with the stream pointer and that this frame is not canceled as long as the lock is maintained. The minidriver should lock a stream pointer before attempting to access the data to which the stream pointer points.</p>
+
+<p>If the pin that the stream pointer references specifies that DMA scatter/gather mappings should be generated using KSPIN_FLAG_GENERATE_MAPPINGS, AVStream generates the mappings when the stream pointer is locked.</p>
+
+<p>Also see <a href="NULL">Stream Pointers</a>. </p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Target platform</p>
+</th>
+<td width="70%">
+<dl>
+<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Version</p>
+</th>
+<td width="70%">
+<p>Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Ks.h (include Ks.h)</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Library</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Ks.lib</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>IRQL</p>
+</th>
+<td width="70%">
+<p>&lt;=DISPATCH_LEVEL</p>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567137">KsStreamPointerUnlock</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerLock function%20 RELEASE:%20(10/25/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

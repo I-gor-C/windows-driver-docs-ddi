@@ -1,0 +1,41 @@
+acpi;ACPI
+audio;Audio
+battery;Battery
+biometric;Biometric
+bltooth;Bluetooth
+debugger;Debugger
+devinst;Driver installation
+devtest;Driver test tools
+display;Display
+dtf;Windows Device Testing Framework (WDTF)
+gpio;General-purpose I/O (GPIO) controllers
+hid;Human Interface Devices (HID)
+ieee;IEEE 1394 bus
+ifsk;Installable file system
+image;Imaging devices
+infrared;Infrared Devices
+kernel;Windows kernel
+mca;Machine Check Architectures
+netvista;Networking drivers for Windows Vista and later
+netxp;Networking drivers for Windows XP and earlier
+nfpdrivers;Near field communications (NFC)
+p_phManuRetail;Mobile Manufacturing
+parports;Parallel Ports
+pci;PCI bus drivers
+pcmcia;PCMCIA bus drivers
+pos;Point of Service (POS)
+powermeter;Power metering
+print;Print devices
+sd;Secure Digital (SD) card
+sensors;Sensors
+serports;Serial port
+sideshow;Windows SideShow Drivers
+smartcrd;Smart Card Reader Devices
+spb;Simple Peripheral Bus (SPB)
+storage;Storage
+stream;Streaming media devices
+swdevice;Software devices
+usbref;Universal Serial Bus (USB)
+wdf;Windows Driver Framework
+whea;Windows Hardware Error Architecture (WHEA)
+wpd_dk;Windows Portable Devices

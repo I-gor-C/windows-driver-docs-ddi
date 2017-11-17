@@ -1,0 +1,109 @@
+---
+UID: NS.pepfx._PEP_PPM_QUERY_COORDINATED_STATES
+title: PEP_PPM_QUERY_COORDINATED_STATES
+author: windows-driver-content
+description: The PEP_PPM_QUERY_COORDINATED_STATES structure contains information about each coordinated idle state that the platform extension plug-in (PEP) supports.
+old-location: kernel\pep_ppm_query_coordinated_states.htm
+ms.assetid: 9C7E41E8-AFB4-4421-8773-EBDA5F779364
+ms.author: windowsdriverdev
+ms.date: 11/2/2017
+ms.topic: struct
+ms.prod: windows-hardware
+ms.technology: kernel
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: PEP_PPM_QUERY_COORDINATED_STATES
+req.alt-loc: pepfx.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+ms.keywords: PEP_PPM_QUERY_COORDINATED_STATES, PEP_PPM_QUERY_COORDINATED_STATES, *PPEP_PPM_QUERY_COORDINATED_STATES
+req.iface: 
+---
+
+# PEP_PPM_QUERY_COORDINATED_STATES structure
+
+
+
+## -description
+<p>The <b>PEP_PPM_QUERY_COORDINATED_STATES</b> structure contains information about each coordinated idle state that the platform extension plug-in (PEP) supports.</p>
+
+
+## -syntax
+
+````
+typedef struct _PEP_PPM_QUERY_COORDINATED_STATES {
+  ULONG                                          Count;
+  _Field_size_(Count) PEP_COORDINATED_IDLE_STATE States[ANYSIZE_ARRAY];
+} PEP_PPM_QUERY_COORDINATED_STATES, *PPEP_PPM_QUERY_COORDINATED_STATES;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field <b>Count</b>
+
+<dd>
+<p>[in] The size of the <b>States</b> array. This will be equal to the <b>PlatformStateCount</b> returned from the query platform states notification.  </p>
+</dd>
+
+### -field <b>States</b>
+
+<dd>
+<p>[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt186707">PEP_COORDINATED_IDLE_STATE</a> structures that contains information about each coordinated idle state that the PEP supports.</p>
+</dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Version</p>
+</th>
+<td width="70%">
+<p>Supported starting with Windows 10.</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Pepfx.h</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186707">PEP_COORDINATED_IDLE_STATE</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186776">PEP_NOTIFY_PPM_QUERY_COORDINATED_STATES notification</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186783">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATES notification</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_QUERY_COORDINATED_STATES structure%20 RELEASE:%20(11/2/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

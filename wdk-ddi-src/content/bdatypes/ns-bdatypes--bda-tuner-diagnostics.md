@@ -1,0 +1,99 @@
+---
+UID: NS.bdatypes._BDA_TUNER_DIAGNOSTICS
+title: BDA_TUNER_DIAGNOSTICS
+author: windows-driver-content
+description: TBD.
+old-location: stream\bda_tuner_diagnostics.htm
+ms.assetid: 19AE53CF-7C09-4858-9D33-CF4B885111D3
+ms.author: windowsdriverdev
+ms.date: 10/25/2017
+ms.topic: struct
+ms.prod: windows-hardware
+ms.technology: stream
+req.header: bdatypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: BDA_TUNER_DIAGNOSTICS
+req.alt-loc: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+ms.keywords: BDA_TUNER_DIAGNOSTICS, BDA_TUNER_DIAGNOSTICS, *PBDA_TUNER_DIAGNOSTICS
+req.iface: 
+---
+
+# BDA_TUNER_DIAGNOSTICS structure
+
+
+
+## -description
+<p>TBD</p>
+
+
+## -syntax
+
+````
+typedef struct _BDA_TUNER_DIAGNOSTICS {
+  PBDARESULT lResult;
+  ULONG      ulSignalLevel;
+  ULONG      ulSignalLevelQuality;
+  ULONG      ulSignalNoiseRatio;
+} BDA_TUNER_DIAGNOSTICS, *PBDA_TUNER_DIAGNOSTICS;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field <b>lResult</b>
+
+<dd>
+<p>TBD</p>
+</dd>
+
+### -field <b>ulSignalLevel</b>
+
+<dd>
+<p>TBD</p>
+</dd>
+
+### -field <b>ulSignalLevelQuality</b>
+
+<dd>
+<p>TBD</p>
+</dd>
+
+### -field <b>ulSignalNoiseRatio</b>
+
+<dd>
+<p>TBD</p>
+</dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Bdatypes.h</dt>
+</dl>
+</td>
+</tr>
+</table>

@@ -1,0 +1,97 @@
+---
+UID: NS.rilapitypes.RILCALLWAITINGINFO
+title: RILCALLWAITINGINFO
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rilcallwaitinginfo_2.htm
+ms.assetid: a634355a-c508-4f1b-9b8b-9325cb34cde0
+ms.author: windowsdriverdev
+ms.date: 11/1/2017
+ms.topic: struct
+ms.prod: windows-hardware
+ms.technology: netvista
+req.header: rilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: RILCALLWAITINGINFO
+req.alt-loc: rilapitypes.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+ms.keywords: RILCALLWAITINGINFO, RILCALLWAITINGINFO
+req.iface: 
+req.product: Windows 10 or later.
+---
+
+# RILCALLWAITINGINFO structure
+
+
+
+## -description
+<p>This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. </p>
+
+
+## -syntax
+
+````
+typedef struct _RILCALLWAITINGINFO {
+  DWORD               cbSize;
+  DWORD               dwParams;
+  DWORD               dwExecutor;
+  RILCALLTYPE         dwCallType;
+  RILREMOTEPARTYINFO  rrpiCallerInfo;
+} RILCALLWAITINGINFO, RILCALLWAITINGINFO;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field <b>cbSize</b>
+
+<dd></dd>
+
+### -field <b>dwParams</b>
+
+<dd></dd>
+
+### -field <b>dwExecutor</b>
+
+<dd></dd>
+
+### -field <b>dwCallType</b>
+
+<dd></dd>
+
+### -field <b>rrpiCallerInfo</b>
+
+<dd></dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Rilapitypes.h</dt>
+</dl>
+</td>
+</tr>
+</table>

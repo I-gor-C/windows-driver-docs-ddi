@@ -1,0 +1,110 @@
+---
+UID: NF.ks.KsCreateDefaultSecurity
+title: KsCreateDefaultSecurity
+author: windows-driver-content
+description: The KsCreateDefaultSecurity function creates a security descriptor with default security, optionally inheriting parameters from a parent security descriptor.
+old-location: stream\kscreatedefaultsecurity.htm
+ms.assetid: 2992a62b-7c3c-4bf5-ba3a-26c26c419f98
+ms.author: windowsdriverdev
+ms.date: 10/25/2017
+ms.topic: function
+ms.prod: windows-hardware
+ms.technology: stream
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: KsCreateDefaultSecurity
+req.alt-loc: Ks.lib,Ks.dll
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+ms.keywords: KsCreateDefaultSecurity
+req.iface: 
+---
+
+# KsCreateDefaultSecurity function
+
+
+
+## -description
+<p>The <b>KsCreateDefaultSecurity </b>function creates a security descriptor with default security, optionally inheriting parameters from a parent security descriptor.</p>
+
+
+## -syntax
+
+````
+NTSTATUS KsCreateDefaultSecurity(
+  _In_opt_ PSECURITY_DESCRIPTOR ParentSecurity,
+  _Out_    PSECURITY_DESCRIPTOR *DefaultSecurity
+);
+````
+
+
+## -parameters
+<dl>
+
+### -param <i>ParentSecurity</i> [in, optional]
+
+<dd>
+<p>Points to the parent object's security descriptor, describing inherited security parameters. This argument is optional.</p>
+</dd>
+
+### -param <i>DefaultSecurity</i> [out]
+
+<dd>
+<p>Points to the place in which to put the returned default security descriptor.</p>
+</dd>
+</dl>
+
+## -returns
+<p><b>KsCreateDefaultSecurity</b> returns STATUS_SUCCESS if the operation is successful, else a resource or assignment error.</p>
+
+## -remarks
+<p><b>KsCreateDefaultSecurity</b> is used to initialize subobjects that do not have any stored security. </p>
+
+<p><b>KsCreateDefaultSecurity</b> is used to initialize subobjects that do not have any stored security. </p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Target platform</p>
+</th>
+<td width="70%">
+<dl>
+<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Ks.h (include Ks.h)</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Library</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Ks.lib</dt>
+</dl>
+</td>
+</tr>
+</table>

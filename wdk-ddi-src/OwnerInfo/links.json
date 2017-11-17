@@ -1,0 +1,177 @@
+{
+    "TBD": {
+        "Long Title": "",
+        "conceptualPath": "===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/TBD",
+        "refPath": "content/_TBD"
+    },
+    "acpi": {
+        "Long Title": "ACPI",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/acpi",
+        "refPath": "content/_acpi"
+    },
+    "audio": {
+        "Long Title": "Audio",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/audio",
+        "refPath": "content/_audio"
+    },
+    "battery": {
+        "Long Title": "Battery",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/battery",
+        "refPath": "content/_battery"
+    },
+    "bltooth": {
+        "Long Title": "Bluetooth",
+        "conceptualPath": "===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/bltooth",
+        "refPath": "content/_bltooth"
+    },
+    "debugger": {
+        "Long Title": "Debugger",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger",
+        "refPath": "content/_debugger"
+    },
+    "devtest": {
+        "Long Title": "Driver test tools",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest",
+        "refPath": "content/_devtest"
+    },
+    "display": {
+        "Long Title": "Display",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/display",
+        "refPath": "content/_display"
+    },
+    "gpio": {
+        "Long Title": "General-purpose I/O (GPIO) controllers",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/gpio",
+        "refPath": "content/_gpio"
+    },
+    "hid": {
+        "Long Title": "Human Interface Devices (HID)",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/hid",
+        "refPath": "content/_hid"
+    },
+    "ieee": {
+        "Long Title": "IEEE 1394 bus",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/ieee",
+        "refPath": "content/_ieee"
+    },
+    "ifsk": {
+        "Long Title": "Installable file system",
+        "conceptualPath": "===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/ifsk",
+        "refPath": "content/_ifsk"
+    },
+    "image": {
+        "Long Title": "Imaging devices",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/image",
+        "refPath": "content/_image"
+    },
+    "infrared": {
+        "Long Title": "Infrared Devices",
+        "conceptualPath": "===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/infrared",
+        "refPath": "content/_infrared"
+    },
+    "kernel": {
+        "Long Title": "Windows kernel",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel",
+        "refPath": "content/_kernel"
+    },
+    "netvista": {
+        "Long Title": "Networking drivers for Windows Vista and later",
+        "conceptualPath": "===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/netvista",
+        "refPath": "content/_netvista"
+    },
+    "netxp": {
+        "Long Title": "Networking drivers for Windows XP and earlier",
+        "conceptualPath": "===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/netxp",
+        "refPath": "content/_netxp"
+    },
+    "nfpdrivers": {
+        "Long Title": "Near field communications (NFC)",
+        "conceptualPath": "===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/nfpdrivers",
+        "refPath": "content/_nfpdrivers"
+    },
+    "parports": {
+        "Long Title": "Parallel Ports",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/parports",
+        "refPath": "content/_parports"
+    },
+    "pci": {
+        "Long Title": "PCI bus drivers",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/pci",
+        "refPath": "content/_pci"
+    },
+    "pcmcia": {
+        "Long Title": "PCMCIA bus drivers",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/pcmcia",
+        "refPath": "content/_pcmcia"
+    },
+    "pos": {
+        "Long Title": "Point of Service (POS)",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/pos",
+        "refPath": "content/_pos"
+    },
+    "powermeter": {
+        "Long Title": "Power metering",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/powermeter",
+        "refPath": "content/_powermeter"
+    },
+    "sd": {
+        "Long Title": "Secure Digital (SD) card",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/sd",
+        "refPath": "content/_sd"
+    },
+    "sensors": {
+        "Long Title": "Sensors",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/sensors",
+        "refPath": "content/_sensors"
+    },
+    "sideshow": {
+        "Long Title": "Windows SideShow Drivers",
+        "conceptualPath": "===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/sideshow",
+        "refPath": "content/_sideshow"
+    },
+    "smartcrd": {
+        "Long Title": "Smart Card Reader Devices",
+        "conceptualPath": "===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/smartcrd",
+        "refPath": "content/_smartcrd"
+    },
+    "spb": {
+        "Long Title": "Simple Peripheral Bus (SPB)",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/spb",
+        "refPath": "content/_spb"
+    },
+    "storage": {
+        "Long Title": "Storage",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/storage",
+        "refPath": "content/_storage"
+    },
+    "stream": {
+        "Long Title": "Streaming media devices",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/stream",
+        "refPath": "content/_stream"
+    },
+    "usbref": {
+        "Long Title": "Universal Serial Bus(USB)",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/stream",
+        "refPath": "content/_stream"
+    },
+    "wdf": {
+        "Long Title": "Windows Driver Framework",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf",
+        "refPath": "content/_wdf"
+    },
+    "whea": {
+        "Long Title": "Windows Hardware Error Architecture (WHEA)",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/whea",
+        "refPath": "content/_whea"
+    },
+    "p_phmanuretail": {
+        "Long Title": "Mobile manufacturing",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/manufacture/mobile",
+        "refPath": "content/_p_phmanuretail"
+    },
+    "gpiobtn": {
+        "Long Title": "Hardware notifications",
+        "conceptualPath": "https://docs.microsoft.com/en-us/windows-hardware/drivers/gpiobtn",
+        "refPath": "content/_gpiobtn"
+    }
+}

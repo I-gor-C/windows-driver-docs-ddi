@@ -1,0 +1,88 @@
+---
+UID: NE.d3dkmthk._KMTQUERYADAPTERINFOTYPE
+title: KMTQUERYADAPTERINFOTYPE
+author: windows-driver-content
+description: 
+ms.assetid: 57d620c2-1de1-4701-b23a-3fd21c54024c
+ms.author: windowsdriverdev
+ms.date: 
+ms.topic: enum
+ms.prod: windows-hardware
+ms.technology: windows-devices
+req.header: d3dkmthk.h
+req.include-header:
+req.target-type:
+req.target-min-winverclnt:
+req.target-min-winversvr:
+req.kmdf-ver:
+req.umdf-ver:
+req.ddi-compliance:
+req.alt-api:
+req.alt-loc:
+req.unicode-ansi:
+req.idl:
+req.max-support:
+req.namespace:
+req.assembly:
+req.type-library:
+---
+
+# KMTQUERYADAPTERINFOTYPE enumeration
+
+## -description
+
+
+
+## -enum-fields
+
+### -field KMTQAITYPE_UMDRIVERPRIVATE : 
+### -field KMTQAITYPE_UMDRIVERNAME : 
+### -field KMTQAITYPE_UMOPENGLINFO : 
+### -field KMTQAITYPE_GETSEGMENTSIZE : 
+### -field KMTQAITYPE_ADAPTERGUID : 
+### -field KMTQAITYPE_FLIPQUEUEINFO : 
+### -field KMTQAITYPE_ADAPTERADDRESS : 
+### -field KMTQAITYPE_SETWORKINGSETINFO : 
+### -field KMTQAITYPE_ADAPTERREGISTRYINFO : 
+### -field KMTQAITYPE_CURRENTDISPLAYMODE : 
+### -field KMTQAITYPE_MODELIST : 
+### -field KMTQAITYPE_CHECKDRIVERUPDATESTATUS : 
+### -field KMTQAITYPE_VIRTUALADDRESSINFO : 
+### -field KMTQAITYPE_DRIVERVERSION : 
+### -field KMTQAITYPE_ADAPTERTYPE : 
+### -field KMTQAITYPE_OUTPUTDUPLCONTEXTSCOUNT : 
+### -field KMTQAITYPE_WDDM_1_2_CAPS : 
+### -field KMTQAITYPE_UMD_DRIVER_VERSION : 
+### -field KMTQAITYPE_DIRECTFLIP_SUPPORT : 
+### -field KMTQAITYPE_MULTIPLANEOVERLAY_SUPPORT : 
+### -field KMTQAITYPE_DLIST_DRIVER_NAME : 
+### -field KMTQAITYPE_WDDM_1_3_CAPS : 
+### -field KMTQAITYPE_MULTIPLANEOVERLAY_HUD_SUPPORT : 
+### -field KMTQAITYPE_WDDM_2_0_CAPS : 
+### -field KMTQAITYPE_NODEMETADATA : 
+### -field KMTQAITYPE_CPDRIVERNAME : 
+### -field KMTQAITYPE_XBOX : 
+### -field KMTQAITYPE_INDEPENDENTFLIP_SUPPORT : 
+### -field KMTQAITYPE_MIRACASTCOMPANIONDRIVERNAME : 
+### -field KMTQAITYPE_PHYSICALADAPTERCOUNT : 
+### -field KMTQAITYPE_PHYSICALADAPTERDEVICEIDS : 
+### -field KMTQAITYPE_DRIVERCAPS_EXT : 
+### -field KMTQAITYPE_QUERY_MIRACAST_DRIVER_TYPE : 
+### -field KMTQAITYPE_QUERY_GPUMMU_CAPS : 
+### -field KMTQAITYPE_QUERY_MULTIPLANEOVERLAY_DECODE_SUPPORT : 
+### -field KMTQAITYPE_QUERY_HW_PROTECTION_TEARDOWN_COUNT : 
+### -field KMTQAITYPE_QUERY_ISBADDRIVERFORHWPROTECTIONDISABLED : 
+### -field KMTQAITYPE_MULTIPLANEOVERLAY_SECONDARY_SUPPORT : 
+### -field KMTQAITYPE_INDEPENDENTFLIP_SECONDARY_SUPPORT : 
+### -field KMTQAITYPE_PANELFITTER_SUPPORT : 
+### -field KMTQAITYPE_PHYSICALADAPTERPNPKEY : 
+### -field KMTQAITYPE_GETSEGMENTGROUPSIZE : 
+### -field KMTQAITYPE_MPO3DDI_SUPPORT : 
+### -field KMTQAITYPE_HWDRM_SUPPORT : 
+### -field KMTQAITYPE_MPOKERNELCAPS_SUPPORT : 
+### -field KMTQAITYPE_MULTIPLANEOVERLAY_STRETCH_SUPPORT : 
+### -field KMTQAITYPE_GET_DEVICE_VIDPN_OWNERSHIP_INFO : 
+
+## -remarks
+
+## -see-also

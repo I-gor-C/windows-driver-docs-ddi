@@ -1,0 +1,168 @@
+---
+UID: NS.ntdddisk._DISK_PERFORMANCE
+title: DISK_PERFORMANCE
+author: windows-driver-content
+description: The DISK_PERFORMANCE structure is used in conjunction with the IOCTL_DISK_PERFORMANCE request to collect summary disk statistics for purposes of measuring disk performance.
+old-location: storage\disk_performance.htm
+ms.assetid: 34d954db-4220-4a3f-849c-f1164e6130f7
+ms.author: windowsdriverdev
+ms.date: 10/24/2017
+ms.topic: struct
+ms.prod: windows-hardware
+ms.technology: Storage
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: DISK_PERFORMANCE
+req.alt-loc: ntdddisk.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+ms.keywords: DISK_PERFORMANCE, DISK_PERFORMANCE, *PDISK_PERFORMANCE
+req.iface: 
+---
+
+# DISK_PERFORMANCE structure
+
+
+
+## -description
+<p>The DISK_PERFORMANCE structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560388">IOCTL_DISK_PERFORMANCE</a> request to collect summary disk statistics for purposes of measuring disk performance. </p>
+
+
+## -syntax
+
+````
+typedef struct _DISK_PERFORMANCE {
+  LARGE_INTEGER BytesRead;
+  LARGE_INTEGER BytesWritten;
+  LARGE_INTEGER ReadTime;
+  LARGE_INTEGER WriteTime;
+  LARGE_INTEGER IdleTime;
+  ULONG         ReadCount;
+  ULONG         WriteCount;
+  ULONG         QueueDepth;
+  ULONG         SplitCount;
+  LARGE_INTEGER QueryTime;
+  ULONG         StorageDeviceNumber;
+  WCHAR         StorageManagerName[8];
+} DISK_PERFORMANCE, *PDISK_PERFORMANCE;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field <b>BytesRead</b>
+
+<dd>
+<p>Contains a cumulative count of bytes read from the disk since the performance counters were enabled. </p>
+</dd>
+
+### -field <b>BytesWritten</b>
+
+<dd>
+<p>Contains a cumulative count of bytes written to the disk since the performance counters were enabled.</p>
+</dd>
+
+### -field <b>ReadTime</b>
+
+<dd>
+<p>Contains a cumulative time, expressed in increments of 100 nanoseconds, spent on disk reads since the performance counters were enabled. </p>
+</dd>
+
+### -field <b>WriteTime</b>
+
+<dd>
+<p>Contains a cumulative time, expressed in increments of 100 nanoseconds, spent on disk reads since the performance counters were enabled. </p>
+</dd>
+
+### -field <b>IdleTime</b>
+
+<dd>
+<p>Contains a cumulative time, expressed in increments of 100 nanoseconds, since the performance counters were enabled in which there was no disk activity. </p>
+</dd>
+
+### -field <b>ReadCount</b>
+
+<dd>
+<p>Contains the number of disk accesses for reads since the performance counters were enabled. </p>
+</dd>
+
+### -field <b>WriteCount</b>
+
+<dd>
+<p>Contains the number of disk accesses for writes since the performance counters were enabled.</p>
+</dd>
+
+### -field <b>QueueDepth</b>
+
+<dd>
+<p>Contains a snapshot of the number of queued disk I/O requests at the time that the query for performance statistics was performed. </p>
+</dd>
+
+### -field <b>SplitCount</b>
+
+<dd>
+<p>Contains the number of disk accesses by means of an associated IRP since the performance counters were enabled. </p>
+</dd>
+
+### -field <b>QueryTime</b>
+
+<dd>
+<p>Contains a timestamp indicating the system time at the moment that the query took place. System time is a count of 100-nanosecond intervals since January 1, 1601. System time is typically updated approximately every ten milliseconds. For more information about system time, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff553068">KeQuerySystemTime</a>.</p>
+</dd>
+
+### -field <b>StorageDeviceNumber</b>
+
+<dd>
+<p>Contains a unique number assigned to every disk or volume across a particular storage type. The storage types are <i>disk.sys</i>, <i>ftdisk.sys</i>, and <i>dmio.sys</i>. </p>
+</dd>
+
+### -field <b>StorageManagerName</b>
+
+<dd>
+<p>Contains an 8-character string that indicates which device driver provided the performance statistics. In Windows 2000, this can be either "LogiDisk" for the driver <i>logidisk.sys</i> or "PhysDisk" for the driver <i>physdisk.sys</i>. These drivers collect performance statistics for devices and physical disks respectively. In Windows XP and later operating systems, this can be any of the following three strings: "FTDISK" for the driver <i>ftdisk.sys</i>, "DMIO" for the driver <i>dmio.sys</i>, or PARTMGR" for the driver <i>partmgr.sys</i>. These three drivers collect performance statistics for basic disk volumes, dynamic disk volumes, and physical disks respectively. Note that these strings are 8-character case-sensitive strings with blank fill. For example, in the case of the string "FTDISK", the <b>StorageManagerName</b> character array should contain two trailing blanks ("FTDISK&lt;b&gt;&lt;b&gt;"), and in the case of the string "DMIO", the array should contain four trailing blanks ("DMIO&lt;b&gt;&lt;b&gt;&lt;b&gt;&lt;b&gt;").</p>
+</dd>
+</dl>
+
+## -remarks
+<p>Counting halts whenever the performance counters are disabled, but the counters are not reset, so the cumulative values assigned to the structure members might potentially reflect disk activity across several enablings and disablings of the counters. </p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Ntdddisk.h (include Ntdddisk.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560388">IOCTL_DISK_PERFORMANCE</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560393">IOCTL_DISK_PERFORMANCE_OFF</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Storage\storage]:%20DISK_PERFORMANCE structure%20 RELEASE:%20(10/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

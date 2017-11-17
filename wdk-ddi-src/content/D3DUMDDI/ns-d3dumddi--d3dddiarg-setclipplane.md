@@ -1,0 +1,103 @@
+---
+UID: NS.d3dumddi._D3DDDIARG_SETCLIPPLANE
+title: D3DDDIARG_SETCLIPPLANE
+author: windows-driver-content
+description: The D3DDDIARG_SETCLIPPLANE structure describes a clip plane.
+old-location: display\d3dddiarg_setclipplane.htm
+ms.assetid: 94e942a4-de66-47a3-89bf-fbec2a408775
+ms.author: windowsdriverdev
+ms.date: 10/25/2017
+ms.topic: struct
+ms.prod: windows-hardware
+ms.technology: display
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: D3DDDIARG_SETCLIPPLANE
+req.alt-loc: d3dumddi.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+ms.keywords: D3DDDIARG_SETCLIPPLANE, D3DDDIARG_SETCLIPPLANE
+req.iface: 
+---
+
+# D3DDDIARG_SETCLIPPLANE structure
+
+
+
+## -description
+<p>The D3DDDIARG_SETCLIPPLANE structure describes a clip plane. </p>
+
+
+## -syntax
+
+````
+typedef struct _D3DDDIARG_SETCLIPPLANE {
+  UINT  Index;
+  FLOAT Plane[4];
+} D3DDDIARG_SETCLIPPLANE;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field <b>Index</b>
+
+<dd>
+<p>[in] The index of the clipping plane for which the plane equation coefficients are set.</p>
+</dd>
+
+### -field <b>Plane</b>
+
+<dd>
+<p>[in] A four-element array of the coefficients A, B, C, and D, in that order, in the general plane equation for the clipping plane. </p>
+</dd>
+</dl>
+
+## -remarks
+<p>The general plane equation in standard form is A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i> = 0. A point with homogeneous coordinates (<i>x</i>, <i>y</i>, <i>z</i>, <i>w</i>) is visible in the half-space of this plane if A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i> &gt;= 0. Points that exist on or behind the clipping plane are clipped from the scene. That is, points for which A<i>x</i> + B<i>y</i> + C<i>z</i> + D<i>w</i> &lt; 0 are clipped.</p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Version</p>
+</th>
+<td width="70%">
+<p>Available in Windows Vista and later versions of the Windows operating systems.</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>D3dumddi.h (include D3dumddi.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/99edfc35-23a5-41e0-8705-7dffba564c10">SetClipPlane</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_SETCLIPPLANE structure%20 RELEASE:%20(10/25/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

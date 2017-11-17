@@ -1,0 +1,211 @@
+---
+UID: NS.ntdddisk._DISK_EX_INT13_INFO
+title: DISK_EX_INT13_INFO
+author: windows-driver-content
+description: The DISK_EX_INT13_INFO structure is used by the BIOS to report disk detection data for a partition with an extended INT13 format.
+old-location: storage\disk_ex_int13_info.htm
+ms.assetid: 82e3a1e9-275a-489a-9e6e-d76007a1abb9
+ms.author: windowsdriverdev
+ms.date: 10/24/2017
+ms.topic: struct
+ms.prod: windows-hardware
+ms.technology: Storage
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: DISK_EX_INT13_INFO
+req.alt-loc: ntdddisk.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+ms.keywords: DISK_EX_INT13_INFO, DISK_EX_INT13_INFO, *PDISK_EX_INT13_INFO
+req.iface: 
+---
+
+# DISK_EX_INT13_INFO structure
+
+
+
+## -description
+<p>The DISK_EX_INT13_INFO structure is used by the BIOS to report disk detection data for a partition with an extended INT13 format. </p>
+
+
+## -syntax
+
+````
+typedef struct _DISK_EX_INT13_INFO {
+  USHORT  ExBufferSize;
+  USHORT  ExFlags;
+  ULONG   ExCylinders;
+  ULONG   ExHeads;
+  ULONG   ExSectorsPerTrack;
+  ULONG64 ExSectorsPerDrive;
+  USHORT  ExSectorSize;
+  USHORT  ExReserved;
+} DISK_EX_INT13_INFO, *PDISK_EX_INT13_INFO;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field <b>ExBufferSize</b>
+
+<dd>
+<p>Indicates the size of the buffer that the caller provides to the BIOS in which to return the requested drive data. <b>ExBufferSize</b> must be 26 or greater. If <b>ExBufferSize</b> is less than 26, the BIOS returns an error . If <b>ExBufferSize</b> is between 30 and 66, the BIOS sets it to exactly 30 on exit. If <b>ExBufferSize</b> is 66 or greater, the BIOS sets it to exactly 66 on exit. </p>
+</dd>
+
+### -field <b>ExFlags</b>
+
+<dd>
+<p>Provides information about the drive. The following table describes the significance of each bit, where bit 0 is the least significant bit and bit 15 the most significant bit. A value of one in the indicated bit means that the feature described in the "Meaning" column is available. A value of zero in the indicated bit means that the feature is not available with this drive.</p>
+<table>
+<tr>
+<th>Bit number </th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>
+<p>0 </p>
+</td>
+<td>
+<p>DMA boundary errors are handled transparently. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 </p>
+</td>
+<td>
+<p>The geometry supplied in bytes 8-12 is valid. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2 </p>
+</td>
+<td>
+<p>Device is removable. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 </p>
+</td>
+<td>
+<p>Device supports write with verify. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 </p>
+</td>
+<td>
+<p>Device has change line support (bit 2 must be set). </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5 </p>
+</td>
+<td>
+<p>Device is lockable (bit 2 must be set). </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6 </p>
+</td>
+<td>
+<p>Device geometry is set to maximum, no media is present (bit 2 must be set). This bit is turned off when media is present in a removable media device. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7-15 </p>
+</td>
+<td>
+<p>Reserved, must be 0. </p>
+</td>
+</tr>
+</table>
+<p> </p>
+</dd>
+
+### -field <b>ExCylinders</b>
+
+<dd>
+<p>Indicates the number of <i>physical </i>cylinders. This is one greater than the maximum cylinder number.</p>
+</dd>
+
+### -field <b>ExHeads</b>
+
+<dd>
+<p>Indicates the number of <i>physical </i>heads. This is one greater than the maximum head number. </p>
+</dd>
+
+### -field <b>ExSectorsPerTrack</b>
+
+<dd>
+<p>Indicates the number of <i>physical </i>sectors per track. This number is the same as the maximum sector number. </p>
+</dd>
+
+### -field <b>ExSectorsPerDrive</b>
+
+<dd>
+<p>Indicates the total count of sectors on the disk. This is one greater than the maximum logical block address. </p>
+</dd>
+
+### -field <b>ExSectorSize</b>
+
+<dd>
+<p>Indicates the sector size in bytes. </p>
+</dd>
+
+### -field <b>ExReserved</b>
+
+<dd>
+<p>Reserved. </p>
+</dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Ntdddisk.h (include Ntdddisk.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552601">DISK_DETECTION_INFO</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552624">DISK_INT13_INFO</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Storage\storage]:%20DISK_EX_INT13_INFO structure%20 RELEASE:%20(10/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

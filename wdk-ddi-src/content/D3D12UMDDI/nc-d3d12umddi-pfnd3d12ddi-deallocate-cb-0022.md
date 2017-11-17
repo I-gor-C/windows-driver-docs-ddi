@@ -1,0 +1,113 @@
+---
+UID: NC.d3d12umddi.PFND3D12DDI_DEALLOCATE_CB_0022
+title: PFND3D12DDI_DEALLOCATE_CB_0022
+author: windows-driver-content
+description: The pfnDeallocateCb callback function controls heap deallocation by using a D3D12DDICB_DEALLOCATE_0022 structure.
+old-location: display\pfnd3d12ddi_deallocate_cb_0022.htm
+ms.assetid: 85304F27-A522-44B7-86EC-31F670828354
+ms.author: windowsdriverdev
+ms.date: 10/25/2017
+ms.topic: callback
+ms.prod: windows-hardware
+ms.technology: display
+req.header: d3d12umddi.h
+req.include-header: D3d12umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: pfnDeallocateCb
+req.alt-loc: D3d12umddi.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+ms.keywords: D3DWDDM2_2DDI_SWIZZLE_PATTERN_DESC, D3DWDDM2_2DDI_SWIZZLE_PATTERN_DESC
+req.iface: 
+---
+
+# PFND3D12DDI_DEALLOCATE_CB_0022 callback
+
+
+
+## -description
+<p>The <i>pfnDeallocateCb</i> callback function controls heap deallocation by using a <a href="https://msdn.microsoft.com/977868D1-02E1-4460-9194-2079B986045E">D3D12DDICB_DEALLOCATE_0022</a> structure.</p>
+
+
+## -prototype
+
+````
+PFND3D12DDI_DEALLOCATE_CB_0022 pfnDeallocateCb;
+
+HRESULT APIENTRY CALLBACK* pfnDeallocateCb(
+  _In_       D3D12DDI_HRTDEVICE         hRTDevice,
+  _In_ const D3D12DDICB_DEALLOCATE_0022 *Deallocate
+)
+{ ... }
+````
+
+
+## -parameters
+<dl>
+
+### -param <i>hRTDevice</i> [in]
+
+<dd>
+<p>The handle for a device.</p>
+</dd>
+
+### -param <i>Deallocate</i> [in]
+
+<dd>
+<p>A  <a href="https://msdn.microsoft.com/977868D1-02E1-4460-9194-2079B986045E">D3D12DDICB_DEALLOCATE_0022</a> structure that contains information for a deallocation.</p>
+</dd>
+</dl>
+
+## -returns
+<p>If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="http://microsoft.com/wdcml/l10n">HRESULT</b> error code.</p>
+
+## -remarks
+<p>Access this callback function by using the <a href="https://msdn.microsoft.com/E5B7FDB6-3351-489E-B0BB-8B8DD605FCF4">D3D12DDI_CORELAYER_DEVICECALLBACKS_0022</a> structure.</p>
+
+<p>The driver must check the return value of the function.</p>
+
+<p>Access this callback function by using the <a href="https://msdn.microsoft.com/E5B7FDB6-3351-489E-B0BB-8B8DD605FCF4">D3D12DDI_CORELAYER_DEVICECALLBACKS_0022</a> structure.</p>
+
+<p>The driver must check the return value of the function.</p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/E5B7FDB6-3351-489E-B0BB-8B8DD605FCF4">D3D12DDI_CORELAYER_DEVICECALLBACKS_0022</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/977868D1-02E1-4460-9194-2079B986045E">D3D12DDICB_DEALLOCATE_0022</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/D0326C98-F187-4F62-AE60-60F0B38AB0D4">pfnAllocateCb</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D12DDI_DEALLOCATE_CB_0022 callback function%20 RELEASE:%20(10/25/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

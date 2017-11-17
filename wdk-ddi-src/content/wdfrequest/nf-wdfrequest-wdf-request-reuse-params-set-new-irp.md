@@ -1,0 +1,142 @@
+---
+UID: NF.wdfrequest.WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
+title: WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
+author: windows-driver-content
+description: The WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function sets a new IRP in a driver's WDF_REQUEST_REUSE_PARAMS structure.
+old-location: wdf\wdf_request_reuse_params_set_new_irp.htm
+ms.assetid: 3a18ec1b-be02-418a-8a38-deca7178ce30
+ms.author: windowsdriverdev
+ms.date: 11/2/2017
+ms.topic: function
+ms.prod: windows-hardware
+ms.technology: wdf
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.alt-api: WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
+req.alt-loc: wdfrequest.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+ms.keywords: WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
+req.iface: 
+req.product: Windows 10 or later.
+---
+
+# WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function
+
+
+
+## -description
+<p class="CCE_Message">[Applies to KMDF and UMDF]</p>
+<p>The <b>WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</b> function sets a new IRP in a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a> structure.</p>
+
+
+## -syntax
+
+````
+VOID WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP(
+  _Inout_ PWDF_REQUEST_REUSE_PARAMS Params,
+  _In_    PIRP                      NewIrp
+);
+````
+
+
+## -parameters
+<dl>
+
+### -param <i>Params</i> [in, out]
+
+<dd>
+<p>A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a> structure.</p>
+</dd>
+
+### -param <i>NewIrp</i> [in]
+
+<dd>
+<p>A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure.</p>
+</dd>
+</dl>
+
+## -returns
+<p>None</p>
+
+## -remarks
+<p>If a driver's call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550026">WdfRequestReuse</a> specifies a new IRP structure, the driver must first call <a href="https://msdn.microsoft.com/library/windows/hardware/ff552483">WDF_REQUEST_REUSE_PARAMS_INIT</a> and then call <b>WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</b> to initialize a WDF_REQUEST_REUSE_PARAMS structure.</p>
+
+<p>The <b>WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</b> function sets the structure's <b>NewIrp</b> member to the specified IRP pointer. It also sets the <b>WDF_REQUEST_REUSE_SET_NEW_IRP</b> flag in the structure's <b>Flag</b> member.</p>
+
+<p>The following code example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a> structure, provides a new IRP structure for the I/O request, and then calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550026">WdfRequestReuse</a>.</p>
+
+<p>If a driver's call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550026">WdfRequestReuse</a> specifies a new IRP structure, the driver must first call <a href="https://msdn.microsoft.com/library/windows/hardware/ff552483">WDF_REQUEST_REUSE_PARAMS_INIT</a> and then call <b>WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</b> to initialize a WDF_REQUEST_REUSE_PARAMS structure.</p>
+
+<p>The <b>WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</b> function sets the structure's <b>NewIrp</b> member to the specified IRP pointer. It also sets the <b>WDF_REQUEST_REUSE_SET_NEW_IRP</b> flag in the structure's <b>Flag</b> member.</p>
+
+<p>The following code example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a> structure, provides a new IRP structure for the I/O request, and then calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550026">WdfRequestReuse</a>.</p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Target platform</p>
+</th>
+<td width="70%">
+<dl>
+<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Minimum KMDF version</p>
+</th>
+<td width="70%">
+<p>1.0</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Minimum UMDF version</p>
+</th>
+<td width="70%">
+<p>2.0</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Wdfrequest.h (include Wdf.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550026">WdfRequestReuse</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552480">WDF_REQUEST_REUSE_PARAMS</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552483">WDF_REQUEST_REUSE_PARAMS_INIT</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function%20 RELEASE:%20(11/2/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

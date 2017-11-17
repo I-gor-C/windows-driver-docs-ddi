@@ -1,0 +1,95 @@
+---
+UID: NS.ntddcdvd._STORAGE_SET_READ_AHEAD
+title: STORAGE_SET_READ_AHEAD
+author: windows-driver-content
+description: The STORAGE_SET_READ_AHEAD structure is used in conjunction with the IOCTL_STORAGE_SET_READ_AHEAD request to instruct the device to skip to the target address upon reaching the trigger address.
+old-location: storage\storage_set_read_ahead.htm
+ms.assetid: 5220230f-5436-4a79-808c-ab840d7009e7
+ms.author: windowsdriverdev
+ms.date: 10/24/2017
+ms.topic: struct
+ms.prod: windows-hardware
+ms.technology: Storage
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: STORAGE_SET_READ_AHEAD
+req.alt-loc: ntddcdvd.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+ms.keywords: STORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD, *PSTORAGE_SET_READ_AHEAD
+req.iface: 
+---
+
+# STORAGE_SET_READ_AHEAD structure
+
+
+
+## -description
+<p>The STORAGE_SET_READ_AHEAD structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560608">IOCTL_STORAGE_SET_READ_AHEAD</a> request to instruct the device to skip to the target address upon reaching the trigger address. </p>
+
+
+## -syntax
+
+````
+typedef struct _STORAGE_SET_READ_AHEAD {
+  LARGE_INTEGER TriggerAddress;
+  LARGE_INTEGER TargetAddress;
+} STORAGE_SET_READ_AHEAD, *PSTORAGE_SET_READ_AHEAD;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field <b>TriggerAddress</b>
+
+<dd>
+<p>Indicates the address at which the device jumps to the target address. </p>
+</dd>
+
+### -field <b>TargetAddress</b>
+
+<dd>
+<p>Indicates the address to jump to. </p>
+</dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Ntddcdvd.h (include Ntddcdvd.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560608">IOCTL_STORAGE_SET_READ_AHEAD</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Storage\storage]:%20STORAGE_SET_READ_AHEAD structure%20 RELEASE:%20(10/24/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

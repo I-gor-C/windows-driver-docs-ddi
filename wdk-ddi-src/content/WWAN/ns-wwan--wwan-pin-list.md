@@ -1,0 +1,178 @@
+---
+UID: NS.wwan._WWAN_PIN_LIST
+title: WWAN_PIN_LIST
+author: windows-driver-content
+description: The WWAN_PIN_LIST structure represents a list of descriptions of Personal Identification Numbers (PINs).
+old-location: netvista\wwan_pin_list.htm
+ms.assetid: 7ddea69c-db40-4fae-9ca9-5eadc9b40b0c
+ms.author: windowsdriverdev
+ms.date: 11/1/2017
+ms.topic: struct
+ms.prod: windows-hardware
+ms.technology: netvista
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: WWAN_PIN_LIST
+req.alt-loc: wwan.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+ms.keywords: WWAN_PIN_LIST, WWAN_PIN_LIST, *PWWAN_PIN_LIST
+req.iface: 
+req.product: Windows 10 or later.
+---
+
+# WWAN_PIN_LIST structure
+
+
+
+## -description
+<p>The WWAN_PIN_LIST structure represents a list of descriptions of Personal Identification Numbers
+  (PINs).</p>
+
+
+## -syntax
+
+````
+typedef struct _WWAN_PIN_LIST {
+  WWAN_PIN_DESC WwanPinDescPin1;
+  WWAN_PIN_DESC WwanPinDescPin2;
+  WWAN_PIN_DESC WwanPinDescDeviceSimPin;
+  WWAN_PIN_DESC WwanPinDescDeviceFirstSimPin;
+  WWAN_PIN_DESC WwanPinDescNetworkPin;
+  WWAN_PIN_DESC WwanPinDescNetworkSubsetPin;
+  WWAN_PIN_DESC WwanPinDescSvcProviderPin;
+  WWAN_PIN_DESC WwanPinDescCorporatePin;
+  WWAN_PIN_DESC WwanPinDescSubsidyLock;
+  WWAN_PIN_DESC WwanPinDescCustom;
+} WWAN_PIN_LIST, *PWWAN_PIN_LIST;
+````
+
+
+## -struct-fields
+<dl>
+
+### -field <b>WwanPinDescPin1</b>
+
+<dd>
+<p>Description for PIN1. For GSM-based devices, this is a Subscriber Identity Module (SIM) PIN. For
+     CDMA-based devices, power-on device lock is reported as PIN1.</p>
+</dd>
+
+### -field <b>WwanPinDescPin2</b>
+
+<dd>
+<p>Description for PIN2. This is a SIM PIN2 that protects certain SIM functionality.</p>
+</dd>
+
+### -field <b>WwanPinDescDeviceSimPin</b>
+
+<dd>
+<p>Description for the device-to-SIM-card PIN. This is a PIN that locks the device to a specific
+     SIM.</p>
+</dd>
+
+### -field <b>WwanPinDescDeviceFirstSimPin</b>
+
+<dd>
+<p>Description for the device-to-very-first-SIM-card PIN. This is a PIN that locks the device to the
+     very first inserted SIM.</p>
+</dd>
+
+### -field <b>WwanPinDescNetworkPin</b>
+
+<dd>
+<p>Description for the network personalization PIN. This is a PIN that allows the device to be
+     personalized to a network. For more information about this PIN type, see section 22.022 of the 3GPP
+     specification.</p>
+</dd>
+
+### -field <b>WwanPinDescNetworkSubsetPin</b>
+
+<dd>
+<p>Description for network subset personalization PIN. This is a PIN that allows the device to be
+     personalized to a subset of a network. For more information about this PIN type, see section 22.022 of
+     the 3GPP specification.</p>
+</dd>
+
+### -field <b>WwanPinDescSvcProviderPin</b>
+
+<dd>
+<p>Description for Service Provider (SP) personalization PIN. This is a PIN that allows the device to
+     be personalized to a service provider. For more information about this PIN type, see section 22.022 of
+     the 3GPP specification.</p>
+</dd>
+
+### -field <b>WwanPinDescCorporatePin</b>
+
+<dd>
+<p>Description for corporate personalization PIN. This is a PIN that allows the device to be
+     personalized to a specific company. For more information about this PIN type, see section 22.022 of the
+     3GPP specification.</p>
+</dd>
+
+### -field <b>WwanPinDescSubsidyLock</b>
+
+<dd>
+<p>Description for subsidy unlock PIN. This is a PIN that allows the device to be restricted to
+     operate on a specific network. For more information about this PIN type, see section 22.022 of the 3GPP
+     specification.</p>
+</dd>
+
+### -field <b>WwanPinDescCustom</b>
+
+<dd>
+<p>Description for custom PIN. This is a custom vendor-defined PIN type. It is not included in the
+     above list.</p>
+</dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Version</p>
+</th>
+<td width="70%">
+<p>Available in Windows 7 and later versions of Windows.</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Wwan.h (include Wwan.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571214">WWAN_PIN_DESC</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567912">NDIS_WWAN_PIN_LIST</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_LIST structure%20 RELEASE:%20(11/1/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

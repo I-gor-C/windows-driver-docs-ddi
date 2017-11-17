@@ -1,0 +1,71 @@
+---
+UID: NF.rxprocs.RxConjureOriginalName
+title: RxConjureOriginalName
+author: windows-driver-content
+description: 
+ms.assetid: 930a8fd4-f3a0-4b54-9400-aca3a35b7911
+ms.author: windowsdriverdev
+ms.date: 
+ms.topic: function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.keywords: RxConjureOriginalName
+req.iface: 
+req.header: rxprocs.h
+req.include-header:
+req.target-type:
+req.target-min-winverclnt:
+req.target-min-winversvr:
+req.kmdf-ver:
+req.umdf-ver:
+req.lib:
+req.dll:
+req.irql: 
+req.ddi-compliance:
+req.alt-api:
+req.alt-loc:
+req.unicode-ansi:
+req.idl:
+req.max-support:
+req.namespace:
+req.assembly:
+req.type-library:
+---
+
+
+# RxConjureOriginalName function
+
+
+## -description
+
+
+
+## -parameters
+
+### -param Fcb
+
+### -param Fobx
+
+### -param ActualNameLength
+
+### -param OriginalName
+
+### -param LengthRemaining
+
+### -param NameConjuringMethod
+
+
+## -returns
+
+This function returns VOID.
+	
+
+## -remarks
+
+
+## -irql
+
+
+
+
+## -see-also
