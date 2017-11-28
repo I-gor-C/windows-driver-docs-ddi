@@ -1,0 +1,244 @@
+---
+UID: NC.wsk.PFN_WSK_CLOSE_SOCKET
+title: PFN_WSK_CLOSE_SOCKET
+author: windows-driver-content
+description: The WskCloseSocket function closes a socket and frees any associated resources.
+old-location: netvista\wskclosesocket.htm
+old-project: netvista
+ms.assetid: 4d4e4a40-db76-4746-8049-3af8c4541283
+ms.author: windowsdriverdev
+ms.date: 11/22/2017
+ms.keywords: WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
+   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: WskCloseSocket
+req.alt-loc: wsk.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: <= DISPATCH_LEVEL
+req.iface: 
+req.product: Windows 10 or later.
+---
+
+# PFN_WSK_CLOSE_SOCKET callback
+
+
+
+## -description
+<p>The 
+  <b>WskCloseSocket</b> function closes a socket and frees any associated resources.</p>
+
+
+## -prototype
+
+````
+NTSTATUS WSKAPI * WskCloseSocket(
+  _In_    PWSK_SOCKET Socket,
+  _Inout_ PIRP        Irp
+);
+````
+
+
+## -parameters
+<dl>
+
+### -param <i>Socket</i> [in]
+
+<dd>
+<p>A pointer to a 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a> structure that specifies the socket
+     object for the socket that is being closed.</p>
+</dd>
+
+### -param <i>Irp</i> [in, out]
+
+<dd>
+<p>A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the close operation
+     asynchronously. For more information about using IRPs with WSK functions, see 
+     <a href="netvista.using_irps_with_winsock_kernel_functions">Using IRPs with Winsock
+     Kernel Functions</a>.</p>
+</dd>
+</dl>
+
+## -returns
+<p><b>WskCloseSocket</b> returns one of the following NTSTATUS codes:</p><dl>
+<dt><b>STATUS_SUCCESS</b></dt>
+</dl><p>The socket was successfully closed. The IRP will be completed with success status.</p><dl>
+<dt><b>STATUS_PENDING</b></dt>
+</dl><p>The WSK subsystem could not close the socket immediately. The WSK subsystem will complete the
+       IRP after it has closed the socket. The status of the close operation will be returned in the 
+       <b>IoStatus.Status</b> field of the IRP.</p><dl>
+<dt><b>Other status codes</b></dt>
+</dl><p>An error occurred. The IRP will be completed with failure status.</p>
+
+<p> </p>
+
+## -remarks
+<p>Before calling the 
+    <b>WskCloseSocket</b> function, a WSK application must ensure that there are no other function calls in
+    progress to any of the socket's functions, including any extension functions, in any of the application's
+    other threads. For example, a WSK application must not call 
+    <b>WskCloseSocket</b> on a socket in one thread while the application is calling 
+    <b>WskSend</b> on the same socket in another thread. Any in-progress calls to the socket's functions must
+    return control back to the WSK application before it calls 
+    <b>WskCloseSocket</b> to close the socket. However, a WSK application can call 
+    <b>WskCloseSocket</b> if there are pending IRPs from prior calls to the socket's functions that have not
+    yet completed.</p>
+
+<p>Calling the 
+    <b>WskCloseSocket</b> function causes the WSK subsystem to cancel and complete all pending IRPs from prior
+    calls to the socket's functions. The WSK subsystem also ensures that any in-progress event callback
+    functions have returned control back to the WSK subsystem before it closes the socket.</p>
+
+<p>After a WSK application has called 
+    <b>WskCloseSocket</b>, it should not make any further calls to any of the socket's functions.</p>
+
+<p>If a WSK application applies a security descriptor to a socket, the cached copy of the security
+    descriptor that is specified in the call to 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>, 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a>, or 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571127">WskControlSocket</a> is not released when the
+    socket is closed. A WSK application must release the cached copy of the security descriptor by using the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571180">WSK_RELEASE_SD</a> client control operation when
+    the security descriptor is no longer needed.</p>
+
+<p>The WSK subsystem deallocates the memory for the socket's socket object, 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>, which was allocated by the WSK
+    subsystem when the socket was created.</p>
+
+<p>For connection-oriented sockets, the 
+    <b>WskCloseSocket</b> function always performs an abortive disconnect of the socket unless the socket is
+    already fully disconnected in both directions. To gracefully disconnect a connection-oriented socket from
+    a remote transport address, a WSK application should call the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571129">WskDisconnect</a> function.</p>
+
+<p>Before calling the 
+    <b>WskCloseSocket</b> function, a WSK application must ensure that there are no other function calls in
+    progress to any of the socket's functions, including any extension functions, in any of the application's
+    other threads. For example, a WSK application must not call 
+    <b>WskCloseSocket</b> on a socket in one thread while the application is calling 
+    <b>WskSend</b> on the same socket in another thread. Any in-progress calls to the socket's functions must
+    return control back to the WSK application before it calls 
+    <b>WskCloseSocket</b> to close the socket. However, a WSK application can call 
+    <b>WskCloseSocket</b> if there are pending IRPs from prior calls to the socket's functions that have not
+    yet completed.</p>
+
+<p>Calling the 
+    <b>WskCloseSocket</b> function causes the WSK subsystem to cancel and complete all pending IRPs from prior
+    calls to the socket's functions. The WSK subsystem also ensures that any in-progress event callback
+    functions have returned control back to the WSK subsystem before it closes the socket.</p>
+
+<p>After a WSK application has called 
+    <b>WskCloseSocket</b>, it should not make any further calls to any of the socket's functions.</p>
+
+<p>If a WSK application applies a security descriptor to a socket, the cached copy of the security
+    descriptor that is specified in the call to 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>, 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a>, or 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571127">WskControlSocket</a> is not released when the
+    socket is closed. A WSK application must release the cached copy of the security descriptor by using the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571180">WSK_RELEASE_SD</a> client control operation when
+    the security descriptor is no longer needed.</p>
+
+<p>The WSK subsystem deallocates the memory for the socket's socket object, 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>, which was allocated by the WSK
+    subsystem when the socket was created.</p>
+
+<p>For connection-oriented sockets, the 
+    <b>WskCloseSocket</b> function always performs an abortive disconnect of the socket unless the socket is
+    already fully disconnected in both directions. To gracefully disconnect a connection-oriented socket from
+    a remote transport address, a WSK application should call the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571129">WskDisconnect</a> function.</p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Target platform</p>
+</th>
+<td width="70%">
+<dl>
+<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Version</p>
+</th>
+<td width="70%">
+<p>Available in Windows Vista and later versions of the Windows operating
+   systems.</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Wsk.h (include Wsk.h)</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>IRQL</p>
+</th>
+<td width="70%">
+<p>&lt;= DISPATCH_LEVEL</p>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571127">WskControlSocket</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571129">WskDisconnect</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571171">WSK_PROVIDER_BASIC_DISPATCH</a>
+</dt>
+<dt>
+<a href="..\wsk\ns-wsk--wsk-provider-connection-dispatch.md">
+   WSK_PROVIDER_CONNECTION_DISPATCH</a>
+</dt>
+<dt>
+<a href="..\wsk\ns-wsk--wsk-provider-datagram-dispatch.md">
+   WSK_PROVIDER_DATAGRAM_DISPATCH</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571176">WSK_PROVIDER_LISTEN_DISPATCH</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CLOSE_SOCKET callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

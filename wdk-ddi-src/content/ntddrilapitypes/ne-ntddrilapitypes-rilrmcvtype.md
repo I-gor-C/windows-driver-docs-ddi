@@ -1,0 +1,87 @@
+---
+UID: NE.ntddrilapitypes.RILRMCVTYPE
+title: RILRMCVTYPE
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rilrmcvtype.htm
+old-project: netvista
+ms.assetid: 007c6b45-0bec-4fcf-984a-675aa5336993
+ms.author: windowsdriverdev
+ms.date: 11/22/2017
+ms.keywords: TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddrilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: RILRMCVTYPE
+req.alt-loc: ntddrilapitypes.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+req.iface: 
+---
+
+# RILRMCVTYPE enumeration
+
+
+
+## -description
+<p>This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.</p>
+
+
+## -syntax
+
+````
+typedef enum _RILRMCVTYPE { 
+  RIL_RMCV_TYPE_BOOLEAN,
+  RIL_RMCV_TYPE_DWORD,
+  RIL_RMCV_TYPE_STRING
+} RILRMCVTYPE;
+````
+
+
+## -enum-fields
+<dl>
+
+### -field <a id="RIL_RMCV_TYPE_BOOLEAN"></a><a id="ril_rmcv_type_boolean"></a><b>RIL_RMCV_TYPE_BOOLEAN</b>
+
+<dd></dd>
+
+### -field <a id="RIL_RMCV_TYPE_DWORD"></a><a id="ril_rmcv_type_dword"></a><b>RIL_RMCV_TYPE_DWORD</b>
+
+<dd></dd>
+
+### -field <a id="RIL_RMCV_TYPE_STRING"></a><a id="ril_rmcv_type_string"></a><b>RIL_RMCV_TYPE_STRING</b>
+
+<dd></dd>
+</dl>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Ntddrilapitypes.h</dt>
+</dl>
+</td>
+</tr>
+</table>

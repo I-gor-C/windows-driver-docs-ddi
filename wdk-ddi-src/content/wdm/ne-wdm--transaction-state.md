@@ -1,0 +1,116 @@
+---
+UID: NE.wdm._TRANSACTION_STATE
+title: TRANSACTION_STATE
+author: windows-driver-content
+description: The TRANSACTION_STATE enumeration defines the states that KTM can assign to a transaction.
+old-location: kernel\transaction_state.htm
+old-project: kernel
+ms.assetid: b97bedc5-6393-49bd-b803-e70e3a3d49df
+ms.author: windowsdriverdev
+ms.date: 11/20/2017
+ms.keywords: WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: TRANSACTION_STATE
+req.alt-loc: Wdm.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: <= APC_LEVEL
+req.iface: 
+req.product: Windows 10 or later.
+---
+
+# TRANSACTION_STATE enumeration
+
+
+
+## -description
+<p>The <b>TRANSACTION_STATE</b> enumeration defines the states that KTM can assign to a transaction.</p>
+
+
+## -syntax
+
+````
+typedef enum _TRANSACTION_STATE { 
+  TransactionStateNormal           = 1,
+  TransactionStateIndoubt          = 2,
+  TransactionStateCommittedNotify  = 3
+} TRANSACTION_STATE;
+````
+
+
+## -enum-fields
+<dl>
+
+### -field <a id="TransactionStateNormal"></a><a id="transactionstatenormal"></a><a id="TRANSACTIONSTATENORMAL"></a><b>TransactionStateNormal</b>
+
+<dd>
+<p>The transaction's state is neither in doubt nor committed.</p>
+</dd>
+
+### -field <a id="TransactionStateIndoubt"></a><a id="transactionstateindoubt"></a><a id="TRANSACTIONSTATEINDOUBT"></a><b>TransactionStateIndoubt</b>
+
+<dd>
+<p>The transaction's state is in doubt (that is, KTM cannot determine whether the transaction should be committed or rolled back). A transaction that has been prepared enters the "in doubt" state if its <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> becomes unavailable.</p>
+</dd>
+
+### -field <a id="TransactionStateCommittedNotify"></a><a id="transactionstatecommittednotify"></a><a id="TRANSACTIONSTATECOMMITTEDNOTIFY"></a><b>TransactionStateCommittedNotify</b>
+
+<dd>
+<p>The transaction has been committed. Commit notifications might (or might not) have been delivered to all enlistments.</p>
+</dd>
+</dl>
+
+## -remarks
+<p>The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564781">TRANSACTION_BASIC_INFORMATION</a> structure.</p>
+
+<p>The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564781">TRANSACTION_BASIC_INFORMATION</a> structure.</p>
+
+<p>The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564781">TRANSACTION_BASIC_INFORMATION</a> structure.</p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Version</p>
+</th>
+<td width="70%">
+<p>Available in Windows Vista and later operating system versions.</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564781">TRANSACTION_BASIC_INFORMATION</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TRANSACTION_STATE enumeration%20 RELEASE:%20(11/20/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

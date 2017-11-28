@@ -1,0 +1,102 @@
+---
+UID: NF.filterpipeline.IXpsDocumentConsumer.SendFixedPage
+title: IXpsDocumentConsumer::SendFixedPage
+author: windows-driver-content
+description: The SendFixedPage method sends a fixed page of an XPS document to the pipeline.
+old-location: print\ixpsdocumentconsumer_sendfixedpage.htm
+old-project: print
+ms.assetid: ef11161d-5e73-44a8-b802-e3706b78950e
+ms.author: windowsdriverdev
+ms.date: 11/24/2017
+ms.keywords: IXpsDocumentConsumer, SendFixedPage, IXpsDocumentConsumer::SendFixedPage
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: IXpsDocumentConsumer.SendFixedPage
+req.alt-loc: filterpipeline.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+req.iface: IXpsDocumentConsumer
+---
+
+# IXpsDocumentConsumer::SendFixedPage method
+
+
+
+## -description
+<p>The <code>SendFixedPage</code> method sends a fixed page of an XPS document to the pipeline.</p>
+
+
+## -syntax
+
+````
+HRESULT SendFixedPage(
+  [in] IFixedPage *pIFixedPage
+);
+````
+
+
+## -parameters
+<dl>
+
+### -param <i>pIFixedPage</i> [in]
+
+<dd>
+<p>A pointer to an XPS fixed page object.</p>
+</dd>
+</dl>
+
+## -returns
+<p><code>SendFixedPage</code> returns an <b>HRESULT</b> value.</p>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Target platform</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Desktop</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Filterpipeline.h</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>IDL</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Filterpipeline.idl</dt>
+</dl>
+</td>
+</tr>
+</table>

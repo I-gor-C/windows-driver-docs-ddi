@@ -1,0 +1,102 @@
+---
+UID: NF.filterpipeline.IPartBase.GetPartCompression
+title: IPartBase::GetPartCompression
+author: windows-driver-content
+description: The GetPartCompression method gets the compression of the part.
+old-location: print\ipartbase_getpartcompression.htm
+old-project: print
+ms.assetid: 18b2a3c2-26da-434e-bcea-89bd6ef22077
+ms.author: windowsdriverdev
+ms.date: 11/24/2017
+ms.keywords: IPartBase, GetPartCompression, IPartBase::GetPartCompression
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: IPartBase.GetPartCompression
+req.alt-loc: filterpipeline.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+req.iface: IPartBase
+---
+
+# IPartBase::GetPartCompression method
+
+
+
+## -description
+<p>The <b>GetPartCompression</b> method gets the compression of the part.</p>
+
+
+## -syntax
+
+````
+HRESULT GetPartCompression(
+  [out] EXpsCompressionOptions *pCompression
+);
+````
+
+
+## -parameters
+<dl>
+
+### -param <i>pCompression</i> [out]
+
+<dd>
+<p>A pointer to the compression option data for the part.</p>
+</dd>
+</dl>
+
+## -returns
+<p><b>GetPartCompression</b> returns an <b>HRESULT</b> value.</p>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Target platform</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Desktop</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Filterpipeline.h</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>IDL</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Filterpipeline.idl</dt>
+</dl>
+</td>
+</tr>
+</table>

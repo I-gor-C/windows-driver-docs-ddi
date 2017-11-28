@@ -1,0 +1,204 @@
+---
+UID: NC.wlanihv.DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA
+title: DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extgetprofilecustomuserdata.htm
+old-project: netvista
+ms.assetid: 1a88138f-aada-410a-a985-249de793aa51
+ms.author: windowsdriverdev
+ms.date: 11/22/2017
+ms.keywords: PrintPropertyValue, PrintPropertyValue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating
+   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: Dot11ExtGetProfileCustomUserData
+req.alt-loc: wlanihv.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+req.iface: 
+req.product: Windows 10 or later.
+---
+
+# DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA callback
+
+
+
+## -description
+
+## -prototype
+
+````
+DWORD WINAPI * Dot11ExtGetProfileCustomUserData(
+  _In_opt_ HANDLE hDot11SvcHandle,
+  _In_opt_ HANDLE hConnectSession,
+  _In_     DWORD  dwSessionID,
+  _Out_    DWORD  *pdwDataSize,
+  _Out_    LPVOID *ppvData
+);
+````
+
+
+## -parameters
+<dl>
+
+### -param <i>hDot11SvcHandle</i> [in, optional]
+
+<dd>
+<p>The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
+     value was specified through a previous call to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a> IHV
+     Handler function.</p>
+</dd>
+
+### -param <i>hConnectSession</i> [in, optional]
+
+<dd>
+<p>The handle used by the operating system to reference the connection session with the basic service
+     set (BSS) network. This handle value was specified through a previous call to the 
+     <a href="..\wlanihv\nc-wlanihv-dot11extihv-perform-pre-associate.md">
+     Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.</p>
+</dd>
+
+### -param <i>dwSessionID</i> [in]
+
+<dd>
+<p>The session identifier (session ID) of the current user.</p>
+</dd>
+
+### -param <i>pdwDataSize</i> [out]
+
+<dd>
+<p>A pointer to a caller-supplied variable that stores the size, in bytes, of the buffer referenced
+     by 
+     <i>ppvData</i> .</p>
+</dd>
+
+### -param <i>ppvData</i> [out]
+
+<dd>
+<p>The address of a pointer variable that stores the address of the buffer containing the user
+     data.</p>
+</dd>
+</dl>
+
+## -returns
+<p>If the call succeeds, the function returns ERROR_SUCCESS. Otherwise, it returns an error code
+     defined in 
+     Winerror.h.</p>
+
+## -remarks
+<p>The operating system does not decrypt the data referenced by the 
+    <i>ppvData</i> parameter after reading it from the system registry. The IHV Extensions DLL should use its
+    own decryption algorithm to decrypt the data after calling 
+    <b>Dot11ExtGetProfileCustomUserData</b>.</p>
+
+<p>For every wireless WLAN profile used by the Native Wifi AutoConfig service, Windows maintains the
+    concept of custom user data. This custom user data is initially non-existent, but can be set by calling
+    the 
+    <a href="..\wlanihv\nc-wlanihv-dot11ext-set-profile-custom-user-data.md">
+    Dot11ExtSetProfileCustomUserData</a> function. The custom user data gets reset to empty any time the
+    profile is modified by calling the 
+    <a href="..\wlanihv\nc-wlanihv-dot11ext-set-current-profile.md">
+    Dot11ExtSetCurrentProfile</a> function.</p>
+
+<p>After custom user data has been set, this data can be accessed using the 
+    <b>Dot11ExtGetProfileCustomUserData</b> function.</p>
+
+<p>The caller is responsible for freeing the memory allocated for the buffer pointed to by the 
+    <i>ppvData</i> parameter using the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a> function.</p>
+
+<p>The operating system does not decrypt the data referenced by the 
+    <i>ppvData</i> parameter after reading it from the system registry. The IHV Extensions DLL should use its
+    own decryption algorithm to decrypt the data after calling 
+    <b>Dot11ExtGetProfileCustomUserData</b>.</p>
+
+<p>For every wireless WLAN profile used by the Native Wifi AutoConfig service, Windows maintains the
+    concept of custom user data. This custom user data is initially non-existent, but can be set by calling
+    the 
+    <a href="..\wlanihv\nc-wlanihv-dot11ext-set-profile-custom-user-data.md">
+    Dot11ExtSetProfileCustomUserData</a> function. The custom user data gets reset to empty any time the
+    profile is modified by calling the 
+    <a href="..\wlanihv\nc-wlanihv-dot11ext-set-current-profile.md">
+    Dot11ExtSetCurrentProfile</a> function.</p>
+
+<p>After custom user data has been set, this data can be accessed using the 
+    <b>Dot11ExtGetProfileCustomUserData</b> function.</p>
+
+<p>The caller is responsible for freeing the memory allocated for the buffer pointed to by the 
+    <i>ppvData</i> parameter using the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a> function.</p>
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Target platform</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Desktop</dt>
+</dl>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Version</p>
+</th>
+<td width="70%">
+<p>Available in Windows Vista and later versions of the Windows operating
+   systems.</p>
+</td>
+</tr>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Wlanihv.h (include Wlanihv.h)</dt>
+</dl>
+</td>
+</tr>
+</table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547422">Dot11ExtFreeBuffer</a>
+</dt>
+<dt>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv-init-adapter.md">Dot11ExtIhvInitAdapter</a>
+</dt>
+<dt>
+<a href="..\wlanihv\nc-wlanihv-dot11extihv-perform-pre-associate.md">
+   Dot11ExtIhvPerformPreAssociate</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547574">Dot11ExtSetCurrentProfile</a>
+</dt>
+<dt>
+<a href="..\wlanihv\nc-wlanihv-dot11ext-set-profile-custom-user-data.md">
+   Dot11ExtSetProfileCustomUserData</a>
+</dt>
+</dl>
+<p> </p>
+<p> </p>
+<p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA callback function%20 RELEASE:%20(11/22/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a></p>

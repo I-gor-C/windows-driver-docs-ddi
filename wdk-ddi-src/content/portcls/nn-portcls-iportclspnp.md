@@ -1,0 +1,101 @@
+---
+UID: NN.portcls.IPortClsPnp
+title: IPortClsPnp
+author: windows-driver-content
+description: IPortClsPnp is the PnP management interface that the port class driver (PortCls) exposes to the adapter.
+old-location: audio\iportclspnp.htm
+old-project: audio
+ms.assetid: AC04051E-8412-4B61-B452-C05A9D8D5CD9
+ms.author: windowsdriverdev
+ms.date: 11/21/2017
+ms.keywords: PcUnregisterIoTimeout
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: IPortClsPnp
+req.alt-loc: portcls.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+req.iface: 
+---
+
+# IPortClsPnp interface
+
+
+
+## -description
+<p><code>IPortClsPnp</code> is the PnP management interface that the port class driver (PortCls) exposes to the adapter.</p>
+<p>For more information,  see <a href="NULL">Implement PnP Rebalance for PortCls Audio Drivers</a>.</p>
+<p>The <code>IPortClsPnp</code> interface is available in Windows 10, version 1511 and later versions of Windows. </p>
+
+
+## -inheritance
+<p>The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsPnp</b> interface inherits from the <a href="com.iunknown" xmlns:loc="http://microsoft.com/wdcml/l10n"><b>IUnknown</b></a> interface. <b>IPortClsPnp</b> also has these types of members:</p>
+
+<p>The <b>IPortClsPnp</b> interface has these methods.</p>
+
+<p>The <code>RegisterAdapterPowerManagement</code> method registers the PnP management interface of the adapter with PortCls.</p>
+
+<p>The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP management interface of the adapter from PortCls.</p>
+
+<p> </p>
+
+## -members
+<p>The <b>IPortClsPnp</b> interface has these methods.</p><table class="members" id="memberListMethods">
+<tr>
+<th align="left" width="37%">Method</th>
+<th align="left" width="63%">Description</th>
+</tr>
+<tr data="declared;">
+<td align="left" width="37%">
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt604860">IPortClsPnp::RegisterAdapterPnpManagement</a>
+</td>
+<td align="left" width="63%">
+<p>The <code>RegisterAdapterPowerManagement</code> method registers the PnP management interface of the adapter with PortCls.</p>
+</td>
+</tr>
+<tr data="declared;">
+<td align="left" width="37%">
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt604861">IPortClsPnp::UnregisterAdapterPnpManagement</a>
+</td>
+<td align="left" width="63%">
+<p>The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP management interface of the adapter from PortCls.</p>
+</td>
+</tr>
+</table><p>The <code>RegisterAdapterPowerManagement</code> method registers the PnP management interface of the adapter with PortCls.</p>
+
+<p>The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP management interface of the adapter from PortCls.</p>
+
+<p> </p>
+
+## -remarks
+
+
+## -requirements
+<table>
+<tr>
+<th width="30%">
+<p>Header</p>
+</th>
+<td width="70%">
+<dl>
+<dt>Portcls.h</dt>
+</dl>
+</td>
+</tr>
+</table>
