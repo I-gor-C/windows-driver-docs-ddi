@@ -39,3 +39,4 @@ usbref;Universal Serial Bus (USB)
 wdf;Windows Driver Framework
 whea;Windows Hardware Error Architecture (WHEA)
 wpd_dk;Windows Portable Devices
+gpiobtn;Hardware Notifications
